@@ -1,0 +1,86 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(images/background.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 0 8%;
+    position: relative;
+}
+.logo{
+    width: 120px;
+    padding: 20px 0;
+    cursor: vertical-text;
+}
+.content{
+    top: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+    color: azure;
+}
+.content h1{
+    font-size: 64px;
+    font-weight: 500;
+}
+.content h1 span{
+    color: aqua;
+}
+.content button{
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    padding: 12px 25px;
+    color: #fff;
+}
+.launch-time{
+    display: flex;
+}
+.launch-time div{
+    flex-basis: 100px;
+}
+.launch-time div p{
+    font-size: 40px;
+    margin-bottom: -12px;
+}
+.S23{
+    width: 250px;
+    position: absolute;
+    right: 10%;
+    bottom: 30%;
+    animation: S23 12s linear infinite;
+    cursor: crosshair;
+}
+@keyframes S23{
+    0%{
+        transform: rotate(0);
+        opacity: 0;
+        border-radius: 50%;
+    }
+    25%{
+        transform: rotate(360deg);
+        opacity: 1;
+        border-radius: 0%;
+    }
+    50%{
+        transform: rotate(720deg);
+        opacity: 0.5;
+        border-radius: 50%;
+    }
+    75%{
+        transform: rotate(1080deg);
+        opacity: 1;
+        border-radius: 0%;
+    }
+    100%{
+        transform: rotate(1440deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+}
